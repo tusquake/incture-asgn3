@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIRTUAL PET & DONUT SHOP</title>
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="cat" onclick="happy_sad()">
+        <div id="cat_happy"><img src="images/cat_happy.png" alt=""></div>
+        <div id="cat_sad" style="display: none"><img src="images/cat_sad.png" alt=""></div>
+        <div id="greeting"></div>
+    </div>
+    <form class="form" id="donutForm" onsubmit="calculate(event)">
+        <div><img src="images/logo.jpg" alt="">
+            <h1>Welcome to our Kitty Donut Shop🍩</h1>
+        </div>
+
+        <label for=" name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="cakeDonuts">Number of cake donuts:</label>
+        <input type="text" id="cake" required>
+
+        <label for="bakedDonuts">Number of baked donuts:</label>
+        <input type="text" id="baked" required>
+
+        <label for="minutes">Minutes till pickup:</label>
+        <input type="text" id="minutes" required>
+
+        <label for="subtotal">Subtotal:</label>
+        <input type="text" id="subtotal" readonly>
+
+        <label for="tax">Tax:</label>
+        <input type="text" id="tax" readonly>
+
+        <label for="total">Total:</label>
+        <input type="text" id="total" readonly>
+
+        <button type="submit">Place Order</button>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
