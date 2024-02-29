@@ -44,7 +44,7 @@ function calculate(event) {
   const total = subtotal + tax;
 
   document.getElementById('subtotal').value = subtotal.toFixed(2)+" $";
-  document.getElementById('tax').value = tax.toFixed(2);
+  document.getElementById('tax').value = tax.toFixed(2)+"$";
   document.getElementById('total').value = total.toFixed(2)+" $";
   alert(`Thank you for placing the order ${customername} wait for ${minutesCount} minutes your order will be prepared on time! and your total will be displayed on screen`);
   document.getElementById('greeting').innerText = `Thank You for placing the order, ${customername}!`;
